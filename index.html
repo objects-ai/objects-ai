@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Proof of Concept — Subdomain Takeover</title>
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; background:#f4f5f7; color:#111; }
+    .card { background:white; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.08); padding:36px; max-width:760px; text-align:left; }
+    h1 { margin:0 0 8px 0; font-size:22px; }
+    p { margin:6px 0 12px 0; color:#333; line-height:1.4; }
+    code { background:#eef2f7; padding:2px 6px; border-radius:4px; font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; }
+    .meta { font-size:13px; color:#6b7280; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Proof of Concept — Subdomain Takeover</h1>
+    <p>
+      This page demonstrates a harmless proof-of-concept for a takeover of <strong>SUBDOMAIN.EXAMPLE.COM</strong>.
+      It does <em>not</em> access, modify, or exfiltrate any data. It simply shows that control of the domain can be gained.
+    </p>
+
+    <p><strong>Observed:</strong> DNS CNAME points to an unclaimed external service (e.g., <code>some-service.provider.net</code>), allowing provisioning of content.</p>
+
+    <p class="meta">
+      Reporter: ObjectsAI / Offensive security researcher<br/>
+      <p>Date: 2025-11-04</p>
+    </p>
+  </div>
+</body>
+</html>
